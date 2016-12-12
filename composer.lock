@@ -1,0 +1,55 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "93162a750ceeffac695f7c10fddca69e",
+    "content-hash": "44db1a5a639f48b228d71f9d98927c26",
+    "packages": [
+        {
+            "name": "flyandi/helpers",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flyandi/php-helpers.git",
+                "reference": "275da0fdc962c329009081c0100f354cc16e4fc7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flyandi/php-helpers/zipball/275da0fdc962c329009081c0100f354cc16e4fc7",
+                "reference": "275da0fdc962c329009081c0100f354cc16e4fc7",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Schwarz",
+                    "email": "flyandi@yahoo.com"
+                }
+            ],
+            "description": "A collection of useful php helpers.",
+            "homepage": "https://github.com/flyandi/php-helpers",
+            "time": "2016-10-18 20:56:41"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "flyandi/helpers": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

@@ -1,0 +1,31 @@
+{
+    "name": "flyandi/microla",
+    "type": "framework",
+    "description": "A lightweight microservice framework for PHP",
+    "keywords": [],
+    "homepage": "https://github.com/flyandi/microla",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Andreas Schwarz",
+            "email": "flyandi@yahoo.com"
+        }
+    ],
+    "autoload": {
+        "files": ["src/Microla/Bootstrap/Bootstrap.php"],
+        "psr-4": {
+            "Microla\\": "src/Microla/Framework"
+        }
+    },
+    "autoload-dev": {
+        "psr-0": {
+            "Service\\": "tests",
+            "MicrolaTests\\": "tests"
+        }
+    },
+    "require": {
+        "flyandi/helpers": "dev-master"
+    },
+    "minimum-stability": "dev"
+}
