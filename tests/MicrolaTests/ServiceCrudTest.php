@@ -22,7 +22,7 @@ namespace MicrolaTests;
 use PHPUnit_Framework_TestCase;
 use Microla\Service as Service;
 
-class ServiceRestTest extends PHPUnit_Framework_TestCase {
+class ServiceCrudTest extends PHPUnit_Framework_TestCase {
 
     /**
      * [setUp description]
@@ -36,20 +36,9 @@ class ServiceRestTest extends PHPUnit_Framework_TestCase {
      * [testRequestHttpGet description]
      * @return [type] [description]
      */
-    public function testRestGet() {
+    public function xtestRequestHttpGet() {
 
-    	$this->assertEquals("Hello World", $this->fakeRestRequest("GET", "/hello", false, [
-            "Content-Type" => "text/plain"
-        ]));
-    }
-
-    /**
-     * [testRestInvalid description]
-     * @return [type] [description]
-     */
-    public function testRestInvalid() {
-
-        $this->assertEquals(false, $this->fakeRestRequest("UPDATE", "/hello", false, [
+    	$this->assertEquals("Hello World", $this->fakeCrudRequest("get", "/hello", false, [
             "Content-Type" => "text/plain"
         ]));
     }
@@ -61,7 +50,7 @@ class ServiceRestTest extends PHPUnit_Framework_TestCase {
      * @param  boolean $data   [description]
      * @return [type]          [description]
      */
-    private function fakeRestRequest($method, $path = false, $data = false, $headers = false) {
+    private function fakeCrudRequest($method, $path = false, $data = false, $headers = false) {
 
        	// fake server request
     	$_SERVER["REQUEST_METHOD"] = strtoupper($method);

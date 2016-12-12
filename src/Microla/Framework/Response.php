@@ -35,33 +35,74 @@ class Response {
 
 
 	/**
-	 * [respond description]
+	 * [http description]
+	 * @param  [type]  $data        [description]
+	 * @param  boolean $contentType [description]
+	 * @param  boolean $headers     [description]
+	 * @param  boolean $http        [description]
+	 * @return [type]               [description]
+	 */
+	public static function http($data, $contentType = false, $headers = false) {
+
+		// figure out what content type
+		$contentType = DefaultValue($contentType, GetServerVar("CONTENT_TYPE"));
+
+		// get content
+		$content = self::content($data, $contentType);
+
+		// start output buffering
+		ob_start();
+
+		// prepare headers
+		foreach(Extend($headers, [
+
+			"Content-Length" => strlen($content),
+
+			"Content-Type" => $contentType,
+
+		]) as $name => $value) {
+			@header(sprintr("{0}: {1}", $name, $value));
+		}
+
+		// write content
+		echo $content;
+		
+		// end and flush
+		ob_end_flush();
+
+		return $content;
+	}
+
+
+	/**
+	 * [content description]
 	 * @param  [type] $data [description]
+	 * @param  [type] $type [description]
 	 * @return [type]       [description]
 	 */
-	public static function respond($data, $contentType = false, $headers = false, $http = false) {
-
-		$contentType = DefaultValue($contentType, GetServerVar("CONTENT_TYPE"));
+	public static function content($content, $type) {
 
 		// figure out the protocol first
 		switch(true) {
 
 			// Text Only
-			case Compare($contentType, "text/plain"):
+			case Compare($type, Types::PLAIN):
 
-				self::respondAsString($data, $headers);
+				$content = self::respondAsString($content);
 				break;
 
-			case Compare($contentType, "text/html"):
+			case Compare($type, Types::HTML):
 
-				self::respondAsHtml($data, $headers);
+				$content = self::respondAsHtml($content);
 				break;
 
 			default:
 
-				self::respondAsJson($data, $headers);
+				$content = self::respondAsJson($content);
 				break;
 		}
+
+		return $content;
 	}
 
 	/**
@@ -79,59 +120,26 @@ class Response {
 
 	/**
 	 * [respondAsJson description]
-	 * @param  [type]  $data   [description]
-	 * @param  boolean $header [description]
+	 * @param  [type] $content [description]
 	 * @return [type]          [description]
 	 */
-	public static function respondAsJson($data, $headers = false) {
+	public static function respondAsJson($content) {
 
-		// format data
-		$data = !is_array($data) && !is_object($data) ? ["data" => $data] : $data;
+		// format content
+		$content = !is_array($content) && !is_object($content) ? ["content" => $content] : $content;
 
 		// format message
-		$content = json_encode($data);
-
-		// output
-		self::output($content, Extend($headers, self::contentType(Types::JSON)));
+		return json_encode($content);
 	}	
 
 
 	/**
-	 * [output description]
+	 * [respondAsString description]
 	 * @param  [type] $content [description]
-	 * @param  [type] $headers [description]
 	 * @return [type]          [description]
 	 */
-	public static function output($content, $headers) {
+	public static function respondAsString($content) {
 
-		// start output buffering
-		ob_start();
-
-		// prepare headers
-		foreach(Extend($headers, [
-
-			"Content-Length" => strlen($content)
-
-		]) as $name => $value) {
-			@header(sprintr("{0}: {1}", $name, $value));
-		}
-
-		// write content
-		echo $content;
-		
-		// end and flush
-		ob_end_flush();
+		return $content;
 	}
-
-
-	/**
-	 * [contentType description]
-	 * @param  [type] $contentType [description]
-	 * @return [type]              [description]
-	 */
-	public static function contentType($contentType) {
-
-		return ["Content-Type" => $contentType];
-	}
-
 }

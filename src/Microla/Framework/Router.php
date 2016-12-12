@@ -44,38 +44,37 @@ class Router {
 	 */
 	public function route() {
 
-		// check sapi 
-		$sapiSource = php_sapi_name();
+		// parse request
+		$request = new Request();
 
-		// get request method
-		$requestMethod = GetServerVar("REQUEST_METHOD");
+		// check request type
+		switch(true) {
 
-		// check if requestMethod is available - we have a REST message
-		if($requestMethod) {
+			case $request->isRest(): 
 
-			// parse REST
-			if(method_exists($this, $requestMethod)) {
+				// get endpoint
+				if($endpoint = $this->parent->getPool()->getEndpoint(GetDirVar(0))) {
 
-				if($result = $this->{$requestMethod}()) {
-					return Response::respond($result);
+					if($result = $endpoint->{$request->getRequestMethod()}()) {
+
+						return Response::http($result);
+					} 
+
+					return Response::httperror(Response::NOT_IMPLEMENTED);
 				}
 
-				return Response::error(Response::NOT_IMPLEMENTED);
-			}
+				return Response::httperrror(Response::NOT_FOUND);
 
-			return Response::error(Response::NOT_FOUND);
+				break;
+
+			case $request->isCrud():
+
+				break;
+
+			case $request->isCli():
+
+				break;
 		}
-	}
-
-	/**
-	 * REST: GET
-	 * @return [type] [description]
-	 */
-	private function get() {
-			
-		$endpoint = $this->parent->getPool()->getEndpoint(GetDirVar(0));
-
-		return $endpoint ? $endpoint->get() : false;
 	}
 
 }

@@ -23,8 +23,41 @@ namespace Microla;
 
 class Request {
 
-	const NOT_FOUND = 404;
+	/**
+	 * [isRest description]
+	 * @return boolean [description]
+	 */
+	public function isRest() {
+
+		return $this->getRequestMethod() && GetServerVar("REQUEST_URI");
+	}
+
+	/**
+	 * [isCrud description]
+	 * @return boolean [description]
+	 */
+	public function isCrud() {
+
+	}
 
 
+	/**
+	 * [isCli description]
+	 * @return boolean [description]
+	 */
+	public function isCli() {
+
+	}
+
+	/**
+	 * [getRequestMethod description]
+	 * @return [type] [description]
+	 */
+	public function getRequestMethod() {
+
+		$requestMethod = strtoupper(GetServerVar("REQUEST_METHOD"));
+
+		return in_array($requestMethod, ["GET", "POST", "PUT", "DELETE"]) ? $requestMethod : false;
+	}
 
 }

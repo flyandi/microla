@@ -32,10 +32,24 @@ class Types {
 	 */
 	const MACHINE = "Machine";
 
-
 	/**
 	 * @var string
 	 */
 	const JSON = "application/json";
+
+	/**
+	 * @var string
+	 */
+	const PLAIN = "text/plain";
+
+	/**
+	 * @var string
+	 */
+	const HTML = "text/html";
+
+	/**
+	 * @var string
+	 */
+	const XML = "application/xml";
 
 }
