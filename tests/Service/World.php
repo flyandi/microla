@@ -22,7 +22,7 @@ namespace Service;
 
 class World
 {
-	public function query() {
+	public function read() {
 
 		return [
 			"result" => "World"
