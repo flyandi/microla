@@ -38,6 +38,7 @@ class Request {
 	 */
 	public function isCrud() {
 
+		return $this->isRest() && $this->getCrudMethod(GetDirVar(1));
 	}
 
 
@@ -58,6 +59,19 @@ class Request {
 		$requestMethod = strtoupper(GetServerVar("REQUEST_METHOD"));
 
 		return in_array($requestMethod, ["GET", "POST", "PUT", "DELETE"]) ? $requestMethod : false;
+	}
+
+
+	/**
+	 * [isCrudMethod description]
+	 * @param  [type]  $crudMethod [description]
+	 * @return boolean             [description]
+	 */
+	public function isCrudMethod($crudMethod) {
+
+		$crudMethod = strtoupper($crudMethod);
+
+		return in_array($crudMethod, ["CREATE", "READ", "UPDATE", "DELETE"]) ? $crudMethod : false;
 	}
 
 }

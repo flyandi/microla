@@ -36,9 +36,9 @@ class ServiceCrudTest extends PHPUnit_Framework_TestCase {
      * [testRequestHttpGet description]
      * @return [type] [description]
      */
-    public function xtestRequestHttpGet() {
+    public function testCrudRead() {
 
-    	$this->assertEquals("Hello World", $this->fakeCrudRequest("get", "/hello", false, [
+    	$this->assertEquals("Hello World", $this->fakeCrudRequest("GET", "/hello/get", false, [
             "Content-Type" => "text/plain"
         ]));
     }

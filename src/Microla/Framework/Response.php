@@ -88,17 +88,12 @@ class Response {
 			// Text Only
 			case Compare($type, Types::PLAIN):
 
-				$content = self::respondAsString($content);
-				break;
-
-			case Compare($type, Types::HTML):
-
-				$content = self::respondAsHtml($content);
+				$content = self::formatAsString($content);
 				break;
 
 			default:
 
-				$content = self::respondAsJson($content);
+				$content = self::formatAsJson($content);
 				break;
 		}
 
@@ -123,7 +118,7 @@ class Response {
 	 * @param  [type] $content [description]
 	 * @return [type]          [description]
 	 */
-	public static function respondAsJson($content) {
+	public static function formatAsJson($content) {
 
 		// format content
 		$content = !is_array($content) && !is_object($content) ? ["content" => $content] : $content;
@@ -138,7 +133,7 @@ class Response {
 	 * @param  [type] $content [description]
 	 * @return [type]          [description]
 	 */
-	public static function respondAsString($content) {
+	public static function formatAsString($content) {
 
 		return $content;
 	}
