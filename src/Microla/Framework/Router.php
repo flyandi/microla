@@ -60,10 +60,10 @@ class Router {
 						return Response::http($result);
 					} 
 
-					return Response::httperror(Response::NOT_IMPLEMENTED);
+					return Response::http(Response::error(Response::NOT_IMPLEMENTED));
 				}
 
-				return Response::httperrror(Response::NOT_FOUND);
+				return Response::http(Response::error(Response::NOT_FOUND));
 
 				break;
 
