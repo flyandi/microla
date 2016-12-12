@@ -107,9 +107,7 @@ class Response {
 	 */
 	public static function error($error) {
 
-		return self::respond([
-			"error" => $error
-		], Types::JSON, false, $error);
+		return ["error" => $error];
 	}
 
 
