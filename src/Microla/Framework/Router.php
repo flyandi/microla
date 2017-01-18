@@ -57,7 +57,7 @@ class Router {
 
 					if($result = $endpoint->{$request->getRequestMethod()}()) {
 
-						return Response::http($result);
+						return Response::http($endpoint, $result);
 					} 
 
 					return Response::http(Response::error(Response::NOT_IMPLEMENTED));
@@ -68,6 +68,7 @@ class Router {
 				break;
 
 			case $request->isCrud():
+
 
 				break;
 

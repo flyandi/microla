@@ -42,13 +42,13 @@ class Response {
 	 * @param  boolean $http        [description]
 	 * @return [type]               [description]
 	 */
-	public static function http($data, $contentType = false, $headers = false) {
+	public static function http($endpoint, $data, $contentType = false, $headers = false) {
 
 		// figure out what content type
 		$contentType = DefaultValue($contentType, GetServerVar("CONTENT_TYPE"));
 
 		// get content
-		$content = self::content($data, $contentType);
+		$content = self::content($endpoint, $data, $contentType);
 
 		// start output buffering
 		ob_start();
@@ -80,7 +80,7 @@ class Response {
 	 * @param  [type] $type [description]
 	 * @return [type]       [description]
 	 */
-	public static function content($content, $type) {
+	public static function content($endpoint, $content, $type) {
 
 		// figure out the protocol first
 		switch(true) {
@@ -88,7 +88,7 @@ class Response {
 			// Text Only
 			case Compare($type, Types::PLAIN):
 
-				$content = self::formatAsString($content);
+				$content = self::formatAsString($content, $endpoint->getParameters());
 				break;
 
 			default:
@@ -125,14 +125,14 @@ class Response {
 		return json_encode($content);
 	}	
 
-
 	/**
-	 * [respondAsString description]
-	 * @param  [type] $content [description]
-	 * @return [type]          [description]
+	 * [formatAsString description]
+	 * @param  [type]  $content    [description]
+	 * @param  boolean $parameters [description]
+	 * @return [type]              [description]
 	 */
-	public static function formatAsString($content) {
-
-		return $content;
+	public static function formatAsString($content, $parameters = false)
+	{	
+		return $parameters ? sprintr($content, $parameters->toArray()) : $content;
 	}
 }

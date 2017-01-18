@@ -19,7 +19,6 @@
 
 namespace Service;
 
-
 class World
 {
 	public function read() {

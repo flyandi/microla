@@ -45,16 +45,26 @@ class Endpoint {
 	private $endpointId = null;
 
 	/**
+	 * [$parameters description]
+	 * @var null
+	 */
+	private $parameters = null;
+
+	/**
 	 * [construct description]
 	 * @return [type] [description]
 	 */
-	public function __construct($endpointId, $className) {
-
+	public function __construct($endpointId, $className)
+	{
 		$this->endpointId = $endpointId;
 
 		$this->className = $className;
 
 		$this->classInstance = new $className($this);
+
+		$this->parameters = new Parameters();
+
+		$this->__extendClass();
 	}
 
 	/**
@@ -63,11 +73,17 @@ class Endpoint {
 	 * @param  [type] $arguments [description]
 	 * @return [type]            [description]
 	 */
-	public function __call($name, $arguments) {
-
-		return method_exists($this->classInstance, $name) ? call_user_func_array([$this->classInstance, $name], $arguments) : null;
+	public function __call($name, $arguments)
+	{
+		return method_exists($this->classInstance, $name) ? call_user_func_array([$this->classInstance, $name], [$this->parameters, $this]) : null;
 	}
 
-
-
+	/**
+	 * [getParameters description]
+	 * @return [type] [description]
+	 */
+	public function getParameters()
+	{
+		return $this->parameters;
+	}
 }

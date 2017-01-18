@@ -25,20 +25,25 @@ use Microla\Service as Service;
 class ServiceRestTest extends PHPUnit_Framework_TestCase {
 
     /**
-     * [setUp description]
-     */
-    public function setUp() {
-
-        $this->service = new Service();
-    }
-
-    /**
      * [testRequestHttpGet description]
      * @return [type] [description]
      */
     public function testRestGet() {
 
     	$this->assertEquals("Hello World", $this->fakeRestRequest("GET", "/hello", false, [
+            "Content-Type" => "text/plain"
+        ]));
+    }
+
+    /**
+     * [testRestGetFormatted description]
+     * @return [type] [description]
+     */
+    public function testRestGetFormatted() {
+
+        $this->assertEquals("Hello Steve", $this->fakeRestRequest("GET", "/helloformatted", [
+            "name" => "Steve"
+        ], [
             "Content-Type" => "text/plain"
         ]));
     }
@@ -63,6 +68,9 @@ class ServiceRestTest extends PHPUnit_Framework_TestCase {
      */
     private function fakeRestRequest($method, $path = false, $data = false, $headers = false) {
 
+        // fake post data (also used for get)
+        $_POST = DefaultValue($data, []);
+
        	// fake server request
     	$_SERVER["REQUEST_METHOD"] = strtoupper($method);
 
@@ -77,7 +85,9 @@ class ServiceRestTest extends PHPUnit_Framework_TestCase {
     	// obstart
     	ob_start();
 
-    	$this->service->getRouter()->route();
+        $service = new Service();
+
+    	$service->getRouter()->route();
 
    		$result = ob_get_contents();
 
