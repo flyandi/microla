@@ -49,6 +49,28 @@ class ServiceRestTest extends PHPUnit_Framework_TestCase {
     }
 
     /**
+     * [testRestNotImplementedMethod description]
+     * @return [type] [description]
+     */
+    public function testRestNotImplementedMethod() {
+
+        $this->assertEquals(false, $this->fakeRestRequest("DELETE", "/hello", false, [
+            "Content-Type" => "text/plain"
+        ]));
+    }
+
+    /**
+     * [testRestNotImplementedEndpoint description]
+     * @return [type] [description]
+     */
+    public function testRestNotImplementedEndpoint() {
+
+        $this->assertEquals(false, $this->fakeRestRequest("GET", "/some-endpoint", false, [
+            "Content-Type" => "text/plain"
+        ]));
+    }
+
+    /**
      * [testRestInvalid description]
      * @return [type] [description]
      */

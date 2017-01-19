@@ -60,10 +60,10 @@ class Router {
 						return Response::http($endpoint, $result);
 					} 
 
-					return Response::http(Response::error(Response::NOT_IMPLEMENTED));
+					return Response::http(false, Response::error(Response::NOT_IMPLEMENTED));
 				}
 
-				return Response::http(Response::error(Response::NOT_FOUND));
+				return Response::http(false, Response::error(Response::NOT_FOUND));
 
 				break;
 
@@ -76,6 +76,8 @@ class Router {
 
 				break;
 		}
+
+		return false;
 	}
 
 }

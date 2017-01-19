@@ -82,13 +82,16 @@ class Response {
 	 */
 	public static function content($endpoint, $content, $type) {
 
+		// prepare
+		$parameters = $endpoint ? $endpoint->getParameters()->toArray() : false;
+
 		// figure out the protocol first
 		switch(true) {
 
 			// Text Only
 			case Compare($type, Types::PLAIN):
 
-				$content = self::formatAsString($content, $endpoint->getParameters());
+				$content = self::formatAsString($content, $parameters);
 				break;
 
 			default:
@@ -133,6 +136,8 @@ class Response {
 	 */
 	public static function formatAsString($content, $parameters = false)
 	{	
-		return $parameters ? sprintr($content, $parameters->toArray()) : $content;
+		if(!is_string($content)) return false;
+
+		return $parameters ? sprintr($content, $parameters) : $content;
 	}
 }
