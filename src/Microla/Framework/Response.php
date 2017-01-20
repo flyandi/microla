@@ -128,7 +128,7 @@ class Response {
 	public static function formatAsJson($content, $parameters) {
 
 		// format content
-		$content = !is_array($content) && !is_object($content) ? ["content" => self::formatAsString($content, $parameters) : $content;
+		$content = !is_array($content) && !is_object($content) ? ["content" => self::formatAsString($content, $parameters)] : $content;
 
 		// format message
 		return json_encode($content);
