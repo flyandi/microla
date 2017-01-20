@@ -68,8 +68,6 @@ class Endpoint
         $this->classInstance = new $className($this);
 
         $this->parameters = new Parameters();
-
-        $this->__extendClass();
     }
 
     /**
