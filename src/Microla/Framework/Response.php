@@ -57,8 +57,8 @@ class Response {
 		ob_start();
 
 		// http code
-		http_response_code(!empty($data) ? 200 : DefaultValue(@$original->error, 600));
-		
+		http_response_code(!empty($data) && !isset($original->error) ? 200 : DefaultValue(@$original->error, 600));
+
 		// prepare headers
 		foreach(Extend($headers, [
 
