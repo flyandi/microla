@@ -26,6 +26,11 @@ use ReflectionClass;
 class Endpoint {
 
 	/**
+	 * @const default
+	 */
+	const DEFAULT = "default";
+
+	/**
 	 * [$classInstance description]
 	 * @var null
 	 */
@@ -75,7 +80,13 @@ class Endpoint {
 	 */
 	public function __call($name, $arguments)
 	{
-		return method_exists($this->classInstance, $name) ? call_user_func_array([$this->classInstance, $name], [$this->parameters, $this]) : null;
+		foreach([$name, self::DEFAULT] as $methodName) {
+			if(method_exists($this->classInstance, $methodName)) {
+				return call_user_func_array([$this->classInstance, $methodName], [$this->parameters, $this]);
+			}
+		}
+
+		return null;
 	}
 
 	/**

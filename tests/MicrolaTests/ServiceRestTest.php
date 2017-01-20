@@ -39,8 +39,8 @@ class ServiceRestTest extends PHPUnit_Framework_TestCase {
      * [testRestGetFormatted description]
      * @return [type] [description]
      */
-    public function testRestGetFormatted() {
-
+    public function testRestGetFormatted()
+    {
         $this->assertEquals("Hello Steve", $this->fakeRestRequest("GET", "/helloformatted", [
             "name" => "Steve"
         ], [
@@ -77,6 +77,20 @@ class ServiceRestTest extends PHPUnit_Framework_TestCase {
     public function testRestInvalid() {
 
         $this->assertEquals(false, $this->fakeRestRequest("UPDATE", "/hello", false, [
+            "Content-Type" => "text/plain"
+        ]));
+    }
+
+
+    /**
+     * [testRestDefaultMethod description]
+     * @return [type] [description]
+     */
+    public function testRestDefaultMethod()
+    {
+        $this->assertEquals("Hello Steve", $this->fakeRestRequest("GET", "/hellodefault", [
+            "name" => "Steve"
+        ], [
             "Content-Type" => "text/plain"
         ]));
     }

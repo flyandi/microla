@@ -19,9 +19,9 @@
 
 namespace Service;
 
-class HelloFormatted
+class HelloDefault
 {
-	public function get()
+	public function default()
 	{	
 		return "Hello {name}";
 	}
