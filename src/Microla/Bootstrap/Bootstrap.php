@@ -23,11 +23,11 @@
  * To prevent this, please define the variable MICROLA_PREVENT_AUTOSTART
  */
 
-if(!defined("MICROLA_PREVENT_AUTOSTART")) {
+if (!defined("MICROLA_PREVENT_AUTOSTART")) {
 
-	// Initiate Service
-	$service = new \Microla\Service();
+    // Initiate Service
+    $service = new \Microla\Service();
 
-	// Process
-	$service->getRouter()->route();
+    // Process
+    $service->getRouter()->route();
 }

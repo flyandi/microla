@@ -19,37 +19,36 @@
 
 namespace Microla;
 
+class Types
+{
 
-class Types {
+    /**
+     * @var string
+     */
+    const ETAG = "Etag";
 
-	/**
-	 * @var string
-	 */
-	const ETAG = "Etag";
+    /**
+     * @var string
+     */
+    const MACHINE = "Machine";
 
-	/**
-	 * @var string
-	 */
-	const MACHINE = "Machine";
+    /**
+     * @var string
+     */
+    const JSON = "application/json";
 
-	/**
-	 * @var string
-	 */
-	const JSON = "application/json";
+    /**
+     * @var string
+     */
+    const PLAIN = "text/plain";
 
-	/**
-	 * @var string
-	 */
-	const PLAIN = "text/plain";
+    /**
+     * @var string
+     */
+    const HTML = "text/html";
 
-	/**
-	 * @var string
-	 */
-	const HTML = "text/html";
-
-	/**
-	 * @var string
-	 */
-	const XML = "application/xml";
-
+    /**
+     * @var string
+     */
+    const XML = "application/xml";
 }

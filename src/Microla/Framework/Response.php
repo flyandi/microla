@@ -102,7 +102,7 @@ class Response {
 
 			default:
 
-				$content = self::formatAsJson($content);
+				$content = self::formatAsJson($content, $parameters);
 				break;
 		}
 
@@ -125,10 +125,10 @@ class Response {
 	 * @param  [type] $content [description]
 	 * @return [type]          [description]
 	 */
-	public static function formatAsJson($content) {
+	public static function formatAsJson($content, $parameters) {
 
 		// format content
-		$content = !is_array($content) && !is_object($content) ? ["content" => $content] : $content;
+		$content = !is_array($content) && !is_object($content) ? ["content" => self::formatAsString($content, $parameters) : $content;
 
 		// format message
 		return json_encode($content);

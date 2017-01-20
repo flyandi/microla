@@ -19,169 +19,170 @@
 
 namespace Microla;
 
+class Parameters
+{
 
-class Parameters {
+    /**
+     * [$data description]
+     * @var [type]
+     */
+    private $data;
 
-	/**
-	 * [$data description]
-	 * @var [type]
-	 */
-	private $data;
+    /**
+     * [$query description]
+     * @var [type]
+     */
+    private $query;
 
-	/**
-	 * [$query description]
-	 * @var [type]
-	 */
-	private $query;
+    /**
+     * [__constructor description]
+     * @return [type] [description]
+     */
+    public function __construct()
+    {
+        $this->clear();
 
-	/**
-	 * [__constructor description]
-	 * @return [type] [description]
-	 */
-	public function __construct()
-	{
-		$this->clear();
+        $this->query = $this->getQueryParameters();
+    }
 
-		$this->query = $this->getQueryParameters();
-	}
+    /**
+     * [__get description]
+     * @param  [type] $name [description]
+     * @return [type]       [description]
+     */
+    public function __get($name)
+    {
+        return DefaultValue(@$this->data->{$name}, DefaultValue(@$this->query->{$name}, null));
+    }
 
-	/**
-	 * [__get description]
-	 * @param  [type] $name [description]
-	 * @return [type]       [description]
-	 */
-	public function __get($name)
-	{
-		return DefaultValue(@$this->data->{$name}, DefaultValue(@$this->query->{$name}, null));
-	}
+    /**
+     * [__set description]
+     * @param [type] $name  [description]
+     * @param [type] $value [description]
+     */
+    public function __set($name, $value)
+    {
+        $this->data->{$name} = $value;
+    }
 
-	/**
-	 * [__set description]
-	 * @param [type] $name  [description]
-	 * @param [type] $value [description]
-	 */
-	public function __set($name, $value)
-	{
-		$this->data->{$name} = $value;
-	}
+    /**
+     * [__call description]
+     * @param  [type] $name      [description]
+     * @param  [type] $arguments [description]
+     * @return [type]            [description]
+     */
+    public function __call($name, $arguments)
+    {
+        if (count($arguments) != 1) {
+            return null;
+        }
 
-	/**
-	 * [__call description]
-	 * @param  [type] $name      [description]
-	 * @param  [type] $arguments [description]
-	 * @return [type]            [description]
-	 */
-	public function __call($name, $arguments)
-	{
-		if(count($arguments) != 1) return null;
+        $this->{$name} = $arguments[0];
+    }
 
-		$this->{$name} = $arguments[0];
-	}	
+    /**
+     * [get description]
+     * @param  [type] $name [description]
+     * @return [type]       [description]
+     */
+    public function get($name)
+    {
+        return $this->{$name};
+    }
 
-	/**
-	 * [get description]
-	 * @param  [type] $name [description]
-	 * @return [type]       [description]
-	 */
-	public function get($name)
-	{
-		return $this->{$name};
-	}
+    /**
+     * [set description]
+     * @param [type] $name  [description]
+     * @param [type] $value [description]
+     */
+    public function set($name, $value)
+    {
+        return $this->{$name} = $value;
+    }
 
-	/**
-	 * [set description]
-	 * @param [type] $name  [description]
-	 * @param [type] $value [description]
-	 */
-	public function set($name, $value)
-	{
-		return $this->{$name} = $value;
-	}
+    /**
+     * [is description]
+     * @param  [type]  $name  [description]
+     * @param  [type]  $value [description]
+     * @return boolean        [description]
+     */
+    public function is($name, $value)
+    {
+        return $this->has($name) && Compare($this->{$name}, $value);
+    }
 
-	/**
-	 * [is description]
-	 * @param  [type]  $name  [description]
-	 * @param  [type]  $value [description]
-	 * @return boolean        [description]
-	 */
-	public function is($name, $value)
-	{
-		return $this->has($name) && Compare($this->{$name}, $value);
-	}
+    /**
+     * [has description]
+     * @param  [type]  $name [description]
+     * @return boolean       [description]
+     */
+    public function has($name)
+    {
+        return $this->hasProperty($name) || $this->hasQueryParameterisset($this->data->{$name}) || isset($this->data);
+    }
 
-	/**
-	 * [has description]
-	 * @param  [type]  $name [description]
-	 * @return boolean       [description]
-	 */
-	public function has($name)
-	{
-		return $this->hasProperty($name) || $this->hasQueryParameterisset($this->data->{$name}) || isset($this->data);
-	}
+    /**
+     * [hasProperty description]
+     * @param  [type]  $name [description]
+     * @return boolean       [description]
+     */
+    public function hasProperty($name)
+    {
+        return isset($this->data->{$name});
+    }
 
-	/**
-	 * [hasProperty description]
-	 * @param  [type]  $name [description]
-	 * @return boolean       [description]
-	 */
-	public function hasProperty($name)
-	{
-		return isset($this->data->{$name});
-	}
+    /**
+     * [hasQueryParameter description]
+     * @param  [type]  $name [description]
+     * @return boolean       [description]
+     */
+    public function hasQueryParameter($name)
+    {
+        return isset($this->query->{$name});
+    }
 
-	/**
-	 * [hasQueryParameter description]
-	 * @param  [type]  $name [description]
-	 * @return boolean       [description]
-	 */
-	public function hasQueryParameter($name)
-	{
-		return isset($this->query->{$name});
-	}
+    /**
+     * [clear description]
+     * @return [type] [description]
+     */
+    public function clear()
+    {
+        $this->data = (object) [];
+    }
 
-	/**
-	 * [clear description]
-	 * @return [type] [description]
-	 */
-	public function clear()
-	{
-		$this->data = (object) [];
-	}
+    /**
+     * [toArray description]
+     * @return [type] [description]
+     */
+    public function toArray()
+    {
+        return (array) Extend($this->query, $this->data);
+    }
 
-	/**
-	 * [toArray description]
-	 * @return [type] [description]
-	 */
-	public function toArray()
-	{
-		return (array) Extend($this->query, $this->data);
-	}
+    /**
+     * [toJson description]
+     * @return [type] [description]
+     */
+    public function toJson()
+    {
+        return json_encode($this->data);
+    }
 
-	/**
-	 * [toJson description]
-	 * @return [type] [description]
-	 */
-	public function toJson()
-	{
-		return json_encode($this->data);
-	}
+    /**
+     * [toObject description]
+     * @return [type] [description]
+     */
+    public function toObject()
+    {
+        return $this->data;
+    }
 
-	/**
-	 * [toObject description]
-	 * @return [type] [description]
-	 */
-	public function toObject()
-	{
-		return $this->data;
-	}
-
-	/**
-	 * [getQueryParameters description]
-	 * @return [type] [description]
-	 */
-	public function getQueryParameters() 
-	{
-		return (object) Extend($_GET, $_POST);
-	}	
-
+    /**
+     * [getQueryParameters description]
+     * @return [type] [description]
+     */
+    public function getQueryParameters()
+    {
+        return (object) Extend($_GET, $_POST);
+    }
 }

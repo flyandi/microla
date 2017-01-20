@@ -19,65 +19,63 @@
 
 namespace Microla;
 
+class Router
+{
 
-class Router {
+    /**
+     * [$parent description]
+     * @var null
+     */
+    private $parent = null;
 
-	/**
-	 * [$parent description]
-	 * @var null
-	 */
-	private $parent = null;
-
-	/**
-	 * [__construct description]
-	 * @param [type] $parent [description]
-	 */
-	public function __construct($parent) {
-
-		$this->parent = $parent;
-	}
-
-
-	/**
-	 * [route description]
-	 * @return [type] [description]
-	 */
-	public function route() {
-
-		// parse request
-		$request = new Request();
-
-		// check request type
-		switch(true) {
-
-			case $request->isRest(): 
-
-				// get endpoint
-				if($endpoint = $this->parent->getPool()->getEndpoint(GetDirVar(0))) {
-
-					if($result = $endpoint->{$request->getRequestMethod()}()) {
-
-						return Response::http($endpoint, $result);
-					} 
-
-					return Response::http(false, Response::error(Response::NOT_IMPLEMENTED));
-				}
-
-				return Response::http(false, Response::error(Response::NOT_FOUND));
-
-				break;
-
-			case $request->isCrud():
+    /**
+     * [__construct description]
+     * @param [type] $parent [description]
+     */
+    public function __construct($parent)
+    {
+        $this->parent = $parent;
+    }
 
 
-				break;
+    /**
+     * [route description]
+     * @return [type] [description]
+     */
+    public function route()
+    {
 
-			case $request->isCli():
+        // parse request
+        $request = new Request();
 
-				break;
-		}
+        // check request type
+        switch (true) {
 
-		return false;
-	}
+            case $request->isRest():
 
+                // get endpoint
+                if ($endpoint = $this->parent->getPool()->getEndpoint(GetDirVar(0))) {
+                    if ($result = $endpoint->{$request->getRequestMethod()}()) {
+                        return Response::http($endpoint, $result);
+                    }
+
+                    return Response::http(false, Response::error(Response::NOT_IMPLEMENTED));
+                }
+
+                return Response::http(false, Response::error(Response::NOT_FOUND));
+
+                break;
+
+            case $request->isCrud():
+
+
+                break;
+
+            case $request->isCli():
+
+                break;
+        }
+
+        return false;
+    }
 }

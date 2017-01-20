@@ -19,83 +19,83 @@
 
 namespace Microla;
 
+class Service
+{
 
-class Service {
-
-	/**
-	 * @var string
-	 */
-	const SERVICE_NAMESPACE = "Service\\";
-
-
-	/**
-	 * @var string
-	 */
-	const SERVICE = "Service\Service";
+    /**
+     * @var string
+     */
+    const SERVICE_NAMESPACE = "Service\\";
 
 
-	/**
-	 * [$pool description]
-	 * @var null
-	 */
-	private $pool = null;
+    /**
+     * @var string
+     */
+    const SERVICE = "Service\Service";
 
 
-	/**
-	 * [$router description]
-	 * @var null
-	 */
-	private $router = null;
+    /**
+     * [$pool description]
+     * @var null
+     */
+    private $pool = null;
 
 
-	/**
-	 * [construct description]
-	 * @return [type] [description]
-	 */
-	public function __construct() {
-
-		$this->pool = new Pool();
-
-		$this->router = new Router($this);
-	}
+    /**
+     * [$router description]
+     * @var null
+     */
+    private $router = null;
 
 
-	/**
-	 * [available description]
-	 * @return [type] [description]
-	 */
-	public function available() {
-		return (boolean) class_exists(self::SERVICE);
-	}
+    /**
+     * [construct description]
+     * @return [type] [description]
+     */
+    public function __construct()
+    {
+        $this->pool = new Pool();
+
+        $this->router = new Router($this);
+    }
 
 
-	/**
-	 * [getName description]
-	 * @return [type] [description]
-	 */
-	public function getName() {
-
-		$this->getServiceParameter("name");
-	}
-
-
-	/**
-	 * [getPool description]
-	 * @return [type] [description]
-	 */
-	public function getPool() {
-
-		return $this->pool;
-	}
+    /**
+     * [available description]
+     * @return [type] [description]
+     */
+    public function available()
+    {
+        return (boolean) class_exists(self::SERVICE);
+    }
 
 
-	/**
-	 * [__process description]
-	 * @return [type] [description]
-	 */
-	public function getRouter() {
+    /**
+     * [getName description]
+     * @return [type] [description]
+     */
+    public function getName()
+    {
+        $this->getServiceParameter("name");
+    }
 
-		return $this->router;
-	}
 
+    /**
+     * [getPool description]
+     * @return [type] [description]
+     */
+    public function getPool()
+    {
+        return $this->pool;
+    }
+
+
+    /**
+     * [__process description]
+     * @return [type] [description]
+     */
+    public function getRouter()
+    {
+        return $this->router;
+    }
 }

@@ -22,79 +22,79 @@ namespace Microla;
 use Closure;
 use ReflectionClass;
 
+class Endpoint
+{
 
-class Endpoint {
+    /**
+     * @const default
+     */
+    private const DEFAULT = 'default';
 
-	/**
-	 * @const default
-	 */
-	const DEFAULT = "default";
-
-	/**
-	 * [$classInstance description]
-	 * @var null
-	 */
-	private $classInstance = null;
+    /**
+     * [$classInstance description]
+     * @var null
+     */
+    private $classInstance = null;
 
 
-	/**
-	 * [$className description]
-	 * @var null
-	 */
-	private $className = null;
+    /**
+     * [$className description]
+     * @var null
+     */
+    private $className = null;
 
-	/**
-	 * [$endpointId description]
-	 * @var null
-	 */
-	private $endpointId = null;
+    /**
+     * [$endpointId description]
+     * @var null
+     */
+    private $endpointId = null;
 
-	/**
-	 * [$parameters description]
-	 * @var null
-	 */
-	private $parameters = null;
+    /**
+     * [$parameters description]
+     * @var null
+     */
+    private $parameters = null;
 
-	/**
-	 * [construct description]
-	 * @return [type] [description]
-	 */
-	public function __construct($endpointId, $className)
-	{
-		$this->endpointId = $endpointId;
+    /**
+     * [construct description]
+     * @return [type] [description]
+     */
+    public function __construct($endpointId, $className)
+    {
+        $this->endpointId = $endpointId;
 
-		$this->className = $className;
+        $this->className = $className;
 
-		$this->classInstance = new $className($this);
+        $this->classInstance = new $className($this);
 
-		$this->parameters = new Parameters();
+        $this->parameters = new Parameters();
 
-		$this->__extendClass();
-	}
+        $this->__extendClass();
+    }
 
-	/**
-	 * [__call description]
-	 * @param  [type] $name      [description]
-	 * @param  [type] $arguments [description]
-	 * @return [type]            [description]
-	 */
-	public function __call($name, $arguments)
-	{
-		foreach([$name, self::DEFAULT] as $methodName) {
-			if(method_exists($this->classInstance, $methodName)) {
-				return call_user_func_array([$this->classInstance, $methodName], [$this->parameters, $this]);
-			}
-		}
+    /**
+     * [__call description]
+     * @param  [type] $name      [description]
+     * @param  [type] $arguments [description]
+     * @return [type]            [description]
+     */
+    public function __call($name, $arguments)
+    {
+        foreach ([$name, self::DEFAULT] as $methodName) {
+            if (method_exists($this->classInstance, $methodName)) {
+                return call_user_func_array([$this->classInstance, $methodName], [$this->parameters, $this]);
+            }
+        }
 
-		return null;
-	}
+        return null;
+    }
 
-	/**
-	 * [getParameters description]
-	 * @return [type] [description]
-	 */
-	public function getParameters()
-	{
-		return $this->parameters;
-	}
+    /**
+     * [getParameters description]
+     * @return [type] [description]
+     */
+    public function getParameters()
+    {
+        return $this->parameters;
+    }
 }

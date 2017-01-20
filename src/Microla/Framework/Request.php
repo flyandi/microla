@@ -19,46 +19,45 @@
 
 namespace Microla;
 
+class Request
+{
 
-class Request {
+    /**
+     * [isRest description]
+     * @return boolean [description]
+     */
+    public function isRest()
+    {
+        return $this->getRequestMethod() && GetServerVar("REQUEST_URI");
+    }
 
-	/**
-	 * [isRest description]
-	 * @return boolean [description]
-	 */
-	public function isRest()
-	{
-		return $this->getRequestMethod() && GetServerVar("REQUEST_URI");
-	}
-
-	/**
-	 * [isCrud description]
-	 * @return boolean [description]
-	 */
-	public function isCrud()
-	{
-		return $this->isRest() && GetDirVar(1);
-	}
+    /**
+     * [isCrud description]
+     * @return boolean [description]
+     */
+    public function isCrud()
+    {
+        return $this->isRest() && GetDirVar(1);
+    }
 
 
-	/**
-	 * [isCli description]
-	 * @return boolean [description]
-	 */
-	public function isCli()
-	{
-		return (php_sapi_name() === 'cli');
-	}
+    /**
+     * [isCli description]
+     * @return boolean [description]
+     */
+    public function isCli()
+    {
+        return (php_sapi_name() === 'cli');
+    }
 
-	/**
-	 * [getRequestMethod description]
-	 * @return [type] [description]
-	 */
-	public function getRequestMethod()
-	{
-		$requestMethod = strtoupper(GetServerVar("REQUEST_METHOD"));
+    /**
+     * [getRequestMethod description]
+     * @return [type] [description]
+     */
+    public function getRequestMethod()
+    {
+        $requestMethod = strtoupper(GetServerVar("REQUEST_METHOD"));
 
-		return in_array($requestMethod, ["GET", "POST", "PUT", "DELETE"]) ? $requestMethod : false;
-	}
-
+        return in_array($requestMethod, ["GET", "POST", "PUT", "DELETE"]) ? $requestMethod : false;
+    }
 }
