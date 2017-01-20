@@ -44,6 +44,9 @@ class Response {
 	 */
 	public static function http($endpoint, $data, $contentType = false, $headers = false) {
 
+		// transform data
+		$original = (object) $data;
+
 		// figure out what content type
 		$contentType = DefaultValue($contentType, GetServerVar("CONTENT_TYPE"));
 
@@ -53,6 +56,9 @@ class Response {
 		// start output buffering
 		ob_start();
 
+		// http code
+		http_response_code(!empty($data) ? 200 : DefaultValue(@$original->error, 600));
+		
 		// prepare headers
 		foreach(Extend($headers, [
 
@@ -110,7 +116,7 @@ class Response {
 	 */
 	public static function error($error) {
 
-		return ["error" => $error];
+		return (object) ["error" => $error];
 	}
 
 
