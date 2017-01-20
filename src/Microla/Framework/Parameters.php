@@ -183,6 +183,6 @@ class Parameters
      */
     public function getQueryParameters()
     {
-        return (object) Extend($_GET, $_POST);
+        return (object) Extend($_GET, $_POST, json_decode(file_get_contents('php://input'), true));
     }
 }
