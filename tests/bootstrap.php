@@ -8,3 +8,6 @@
 
 	// include autoloader
 	include("../../vendor/autoload.php");
+
+	// include support files
+	include("../Support/FakeRestCall.php");

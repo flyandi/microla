@@ -17,43 +17,48 @@
  * <http://www.doctrine-project.org>.
  */
 
-namespace MicrolaTests;
+namespace Support;
 
-use PHPUnit_Framework_TestCase;
 use Microla\Service as Service;
 
-class ServiceBaseTest extends PHPUnit_Framework_TestCase {
+class FakeRestCall
+{
 
 	/**
-	 * [setUp description]
+	 * [execute description]
+	 * @param  [type]  $method  [description]
+	 * @param  boolean $path    [description]
+	 * @param  boolean $data    [description]
+	 * @param  boolean $headers [description]
+	 * @return [type]           [description]
 	 */
-    public function setUp() {
+	public static function execute($method, $path = false, $data = false, $headers = false)
+	{
+	    // fake post data (also used for get)
+	    $_POST = DefaultValue($data, []);
 
-        $this->service = new Service();
-    }
+	   	// fake server request
+		$_SERVER["REQUEST_METHOD"] = strtoupper($method);
 
-    /*
-     * [testServiceAvailable description]
-     * @return [type] [description]
-     */
-    public function testServiceAvailable() {
+		// fake server request
+		$_SERVER["REQUEST_URI"] = $path;
 
-    	$this->assertEquals(true, $this->service->available());
-    }
+	    // set headers
+	    foreach(Extend($headers) as $name => $value) {
+	        $_SERVER[strtoupper(str_replace("-", "_", $name))] = $value;
+	    }
 
-    /**
-     * [testHasServiceEndpoints description]
-     * @return [type] [description]
-     */
-    public function testHasServiceEndpoints() {
+		// obstart
+		ob_start();
 
-    	// lowercase prefered
-    	$this->assertEquals(true, $this->service->getPool()->hasEndpoint("hello"));
+	    $service = new Service();
 
-    	// uppercase
-    	$this->assertEquals(true, $this->service->getPool()->hasEndpoint("WORLD"));
+		$service->getRouter()->route();
 
-    	// invalid endpoint
-    	$this->assertEquals(false, $this->service->getPool()->hasEndpoint("Some Invalid Endpoint Name"));
-    }
+		$result = ob_get_contents();
+
+		ob_end_clean();
+
+		return $result;
+	}
 }

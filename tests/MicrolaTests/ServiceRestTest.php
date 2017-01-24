@@ -20,7 +20,7 @@
 namespace MicrolaTests;
 
 use PHPUnit_Framework_TestCase;
-use Microla\Service as Service;
+use Support\FakeRestCall;
 
 class ServiceRestTest extends PHPUnit_Framework_TestCase {
 
@@ -30,7 +30,7 @@ class ServiceRestTest extends PHPUnit_Framework_TestCase {
      */
     public function testRestGet() {
 
-    	$this->assertEquals("Hello World", $this->fakeRestRequest("GET", "/hello", false, [
+    	$this->assertEquals("Hello World", FakeRestCall::execute("GET", "/hello", false, [
             "Content-Type" => "text/plain"
         ]));
     }
@@ -41,7 +41,7 @@ class ServiceRestTest extends PHPUnit_Framework_TestCase {
      */
     public function testRestGetFormatted()
     {
-        $this->assertEquals("Hello Steve", $this->fakeRestRequest("GET", "/helloformatted", [
+        $this->assertEquals("Hello Steve", FakeRestCall::execute("GET", "/helloformatted", [
             "name" => "Steve"
         ], [
             "Content-Type" => "text/plain"
@@ -54,7 +54,7 @@ class ServiceRestTest extends PHPUnit_Framework_TestCase {
      */
     public function testRestNotImplementedMethod() {
 
-        $this->assertEquals(false, $this->fakeRestRequest("DELETE", "/hello", false, [
+        $this->assertEquals(false, FakeRestCall::execute("DELETE", "/hello", false, [
             "Content-Type" => "text/plain"
         ]));
     }
@@ -65,7 +65,7 @@ class ServiceRestTest extends PHPUnit_Framework_TestCase {
      */
     public function testRestNotImplementedEndpoint() {
 
-        $this->assertEquals(false, $this->fakeRestRequest("GET", "/some-endpoint", false, [
+        $this->assertEquals(false, FakeRestCall::execute("GET", "/some-endpoint", false, [
             "Content-Type" => "text/plain"
         ]));
     }
@@ -76,7 +76,7 @@ class ServiceRestTest extends PHPUnit_Framework_TestCase {
      */
     public function testRestInvalid() {
 
-        $this->assertEquals(false, $this->fakeRestRequest("UPDATE", "/hello", false, [
+        $this->assertEquals(false, FakeRestCall::execute("UPDATE", "/hello", false, [
             "Content-Type" => "text/plain"
         ]));
     }
@@ -88,48 +88,10 @@ class ServiceRestTest extends PHPUnit_Framework_TestCase {
      */
     public function testRestDefaultMethod()
     {
-        $this->assertEquals("Hello Steve", $this->fakeRestRequest("GET", "/hellodefault", [
+        $this->assertEquals("Hello Steve", FakeRestCall::execute("GET", "/hellodefault", [
             "name" => "Steve"
         ], [
             "Content-Type" => "text/plain"
         ]));
     }
-
-    /**
-     * [fakeRestRequest description]
-     * @param  [type]  $method [description]
-     * @param  boolean $path   [description]
-     * @param  boolean $data   [description]
-     * @return [type]          [description]
-     */
-    private function fakeRestRequest($method, $path = false, $data = false, $headers = false) {
-
-        // fake post data (also used for get)
-        $_POST = DefaultValue($data, []);
-
-       	// fake server request
-    	$_SERVER["REQUEST_METHOD"] = strtoupper($method);
-
-    	// fake server request
-    	$_SERVER["REQUEST_URI"] = $path;
-
-        // set headers
-        foreach(Extend($headers) as $name => $value) {
-            $_SERVER[strtoupper(str_replace("-", "_", $name))] = $value;
-        }
-
-    	// obstart
-    	ob_start();
-
-        $service = new Service();
-
-    	$service->getRouter()->route();
-
-   		$result = ob_get_contents();
-
-    	ob_end_clean();
-
-   		return $result;
-    }	
-
 }

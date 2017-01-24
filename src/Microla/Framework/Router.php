@@ -54,8 +54,10 @@ class Router
             case $request->isRest():
 
                 // get endpoint
-                if ($endpoint = $this->parent->getPool()->getEndpoint(GetDirVar(0))) {
-                    if ($result = $endpoint->{$request->getRequestMethod()}()) {
+                if ($endpoint = $this->parent->getPool()->getEndpoint(GetDirVar(0)))
+                {
+                    if ($result = $endpoint->{$request->getRequestMethod()}())
+                    {
                         return Response::http($endpoint, $result);
                     }
 
@@ -67,7 +69,6 @@ class Router
                 break;
 
             case $request->isCrud():
-
 
                 break;
 

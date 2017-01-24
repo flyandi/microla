@@ -20,40 +20,18 @@
 namespace MicrolaTests;
 
 use PHPUnit_Framework_TestCase;
-use Microla\Service as Service;
+use Support\FakeRestCall;
 
-class ServiceBaseTest extends PHPUnit_Framework_TestCase {
-
-	/**
-	 * [setUp description]
-	 */
-    public function setUp() {
-
-        $this->service = new Service();
-    }
-
-    /*
-     * [testServiceAvailable description]
-     * @return [type] [description]
-     */
-    public function testServiceAvailable() {
-
-    	$this->assertEquals(true, $this->service->available());
-    }
+class ServiceCustomResponseTest extends PHPUnit_Framework_TestCase {
 
     /**
-     * [testHasServiceEndpoints description]
+     * [testRequestHttpGet description]
      * @return [type] [description]
      */
-    public function testHasServiceEndpoints() {
+    public function testCustomResponse() {
 
-    	// lowercase prefered
-    	$this->assertEquals(true, $this->service->getPool()->hasEndpoint("hello"));
-
-    	// uppercase
-    	$this->assertEquals(true, $this->service->getPool()->hasEndpoint("WORLD"));
-
-    	// invalid endpoint
-    	$this->assertEquals(false, $this->service->getPool()->hasEndpoint("Some Invalid Endpoint Name"));
+        $this->assertEquals("<xml>Custom Result</xml>", FakeRestCall::execute("GET", "/hellocustomresponse", false, [
+            "Content-Type" => "text/plain"
+        ]));
     }
 }

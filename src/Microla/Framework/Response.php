@@ -20,19 +20,47 @@
 namespace Microla;
 
 
-
 class Response {
 
 	/**
-	 * @var string
+	 * @var integer
+	 */
+	const OK = 200;
+
+	/**
+	 * @var integer
 	 */
 	const NOT_FOUND = 404;
 
 	/**
-	 * @var string
+	 * @var integer
 	 */
 	const NOT_IMPLEMENTED = 501;
 
+	/**
+	 * @var integer
+	 */
+	const NOT_SUPPORTED = 600;
+
+	/**
+	 * @var string
+	 */
+	const RESPONSE_STATUS = "responseStatus"; 
+
+	/**
+	 * @var string
+	 */
+	const RESPONSE_HEADERS = "responseHeaders";
+
+	/**
+	 * @var string
+	 */
+	const RESPONSE_BODY = "responseBody";
+
+	/**
+	 * @var string
+	 */
+	const RESPONSE_ERROR = "error";
 
 	/**
 	 * [http description]
@@ -42,8 +70,8 @@ class Response {
 	 * @param  boolean $http        [description]
 	 * @return [type]               [description]
 	 */
-	public static function http($endpoint, $data, $contentType = false, $headers = false) {
-
+	public static function http($endpoint, $data, $contentType = false, $headers = false)
+	{
 		// transform data
 		$original = (object) $data;
 
@@ -57,21 +85,22 @@ class Response {
 		ob_start();
 
 		// http code
-		http_response_code(!empty($data) && !isset($original->error) ? 200 : DefaultValue(@$original->error, 600));
+		http_response_code(DefaultValue(@$content->{self::RESPONSE_STATUS}, self::NOT_SUPPORTED));
 
 		// prepare headers
-		foreach(Extend($headers, [
+		foreach(Extend($headers, @$content->{self::RESPONSE_HEADERS}, [
 
-			"Content-Length" => strlen($content),
+			"Content-Length" => strlen($content->{self::RESPONSE_BODY}),
 
 			"Content-Type" => $contentType,
 
-		]) as $name => $value) {
+		]) as $name => $value)
+		{
 			@header(sprintr("{0}: {1}", $name, $value));
 		}
 
 		// write content
-		echo $content;
+		echo $content->{self::RESPONSE_BODY};
 		
 		// end and flush
 		ob_end_flush();
@@ -86,27 +115,60 @@ class Response {
 	 * @param  [type] $type [description]
 	 * @return [type]       [description]
 	 */
-	public static function content($endpoint, $content, $type) {
-
+	public static function content($endpoint, $content, $type)
+	{
 		// prepare
 		$parameters = $endpoint ? $endpoint->getParameters()->toArray() : false;
+
+		// initialize
+		$body = false;
+
+		$headers = false;
+
+		// set status
+		$status = !is_callable($content) && is_object($content) && isset($content->{self::RESPONSE_ERROR}) ? $content->{self::RESPONSE_ERROR} : false;
 
 		// figure out the protocol first
 		switch(true) {
 
+			// Custom
+			case is_callable($content) || (is_array($content) && is_callable($content[0])):
+
+				if(!is_array($content)) $content = [$content];
+
+				$body = is_callable($content[0]) ? $content[0]($type) : false;
+
+				$headers = isset($content[1]) && is_callable($content[1]) ? $content[1]() : false;
+
+				if(isset($content[2]) && is_callable($content[2])) {
+					$status = $content[2]();
+				}
+
+				break;
+
 			// Text Only
 			case Compare($type, Types::PLAIN):
 
-				$content = self::formatAsString($content, $parameters);
+				$body = self::formatAsString($content, $parameters);
+
 				break;
 
 			default:
 
-				$content = self::formatAsJson($content, $parameters);
+				$body = self::formatAsJson($content, $parameters);
+
 				break;
 		}
 
-		return $content;
+		// return
+		return (object) [
+
+			self::RESPONSE_BODY => $body,
+
+			self::RESPONSE_HEADERS => $headers,
+
+			self::RESPONSE_STATUS => $status === false ? (!empty($body) ? self::OK : self::NOT_SUPPORTED) : $status
+		];
 	}
 
 	/**
@@ -114,9 +176,9 @@ class Response {
 	 * @param  [type] $error [description]
 	 * @return [type]        [description]
 	 */
-	public static function error($error) {
-
-		return (object) ["error" => $error];
+	public static function error($error)
+	{
+		return (object) [self::RESPONSE_ERROR => $error];
 	}
 
 
@@ -125,8 +187,8 @@ class Response {
 	 * @param  [type] $content [description]
 	 * @return [type]          [description]
 	 */
-	public static function formatAsJson($content, $parameters) {
-
+	public static function formatAsJson($content, $parameters)
+	{
 		// format content
 		$content = !is_array($content) && !is_object($content) ? ["content" => self::formatAsString($content, $parameters)] : $content;
 
