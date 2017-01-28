@@ -62,14 +62,13 @@ class Response {
 	 */
 	const RESPONSE_ERROR = "error";
 
-	/**
-	 * [http description]
-	 * @param  [type]  $data        [description]
-	 * @param  boolean $contentType [description]
-	 * @param  boolean $headers     [description]
-	 * @param  boolean $http        [description]
-	 * @return [type]               [description]
-	 */
+    /**
+     * @param $endpoint
+     * @param $data
+     * @param bool $contentType
+     * @param bool $headers
+     * @return object
+     */
 	public static function http($endpoint, $data, $contentType = false, $headers = false)
 	{
 		// transform data

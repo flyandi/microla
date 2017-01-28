@@ -24,40 +24,35 @@ use ReflectionClass;
 
 class Endpoint
 {
-
     /**
-     * @const default
+     * @var string
      */
-    private const DEFAULT = 'default';
+    const DEFAULT = 'default';
 
     /**
-     * [$classInstance description]
      * @var null
      */
     private $classInstance = null;
 
-
     /**
-     * [$className description]
      * @var null
      */
     private $className = null;
 
     /**
-     * [$endpointId description]
      * @var null
      */
     private $endpointId = null;
 
     /**
-     * [$parameters description]
      * @var null
      */
     private $parameters = null;
 
     /**
-     * [construct description]
-     * @return [type] [description]
+     * Endpoint constructor.
+     * @param $endpointId
+     * @param $className
      */
     public function __construct($endpointId, $className)
     {
@@ -71,10 +66,9 @@ class Endpoint
     }
 
     /**
-     * [__call description]
-     * @param  [type] $name      [description]
-     * @param  [type] $arguments [description]
-     * @return [type]            [description]
+     * @param $name
+     * @param $arguments
+     * @return mixed|null
      */
     public function __call($name, $arguments)
     {
@@ -88,8 +82,7 @@ class Endpoint
     }
 
     /**
-     * [getParameters description]
-     * @return [type] [description]
+     * @return Parameters|null
      */
     public function getParameters()
     {

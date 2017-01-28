@@ -4,7 +4,6 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "93162a750ceeffac695f7c10fddca69e",
     "content-hash": "44db1a5a639f48b228d71f9d98927c26",
     "packages": [
         {
@@ -13,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flyandi/php-helpers.git",
-                "reference": "275da0fdc962c329009081c0100f354cc16e4fc7"
+                "reference": "1e3653056696156366f5dbe439b0b389e62bb191"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flyandi/php-helpers/zipball/275da0fdc962c329009081c0100f354cc16e4fc7",
-                "reference": "275da0fdc962c329009081c0100f354cc16e4fc7",
+                "url": "https://api.github.com/repos/flyandi/php-helpers/zipball/1e3653056696156366f5dbe439b0b389e62bb191",
+                "reference": "1e3653056696156366f5dbe439b0b389e62bb191",
                 "shasum": ""
             },
             "type": "library",
@@ -37,9 +36,9 @@
                     "email": "flyandi@yahoo.com"
                 }
             ],
-            "description": "A collection of useful php helpers.",
+            "description": "A collection of useful global php helpers.",
             "homepage": "https://github.com/flyandi/php-helpers",
-            "time": "2016-10-18 20:56:41"
+            "time": "2017-01-28 04:51:38"
         }
     ],
     "packages-dev": [],

@@ -21,26 +21,22 @@ namespace Microla;
 
 class Router
 {
-
     /**
-     * [$parent description]
      * @var null
      */
     private $parent = null;
 
     /**
-     * [__construct description]
-     * @param [type] $parent [description]
+     * Router constructor.
+     * @param $parent
      */
     public function __construct($parent)
     {
         $this->parent = $parent;
     }
 
-
     /**
-     * [route description]
-     * @return [type] [description]
+     * @return bool|object
      */
     public function route()
     {

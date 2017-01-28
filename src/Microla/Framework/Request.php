@@ -23,8 +23,7 @@ class Request
 {
 
     /**
-     * [isRest description]
-     * @return boolean [description]
+     * @return bool
      */
     public function isRest()
     {
@@ -32,18 +31,15 @@ class Request
     }
 
     /**
-     * [isCrud description]
-     * @return boolean [description]
+     * @return bool
      */
     public function isCrud()
     {
         return $this->isRest() && GetDirVar(1);
     }
 
-
     /**
-     * [isCli description]
-     * @return boolean [description]
+     * @return bool
      */
     public function isCli()
     {
@@ -51,8 +47,7 @@ class Request
     }
 
     /**
-     * [getRequestMethod description]
-     * @return [type] [description]
+     * @return bool|string
      */
     public function getRequestMethod()
     {

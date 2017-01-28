@@ -21,22 +21,18 @@ namespace Microla;
 
 class Parameters
 {
-
     /**
-     * [$data description]
-     * @var [type]
+     * @var null
      */
-    private $data;
+    private $data = null;
 
     /**
-     * [$query description]
-     * @var [type]
+     * @var null|object
      */
-    private $query;
+    private $query = null;
 
     /**
-     * [__constructor description]
-     * @return [type] [description]
+     * Parameters constructor.
      */
     public function __construct()
     {
@@ -46,9 +42,8 @@ class Parameters
     }
 
     /**
-     * [__get description]
-     * @param  [type] $name [description]
-     * @return [type]       [description]
+     * @param $name
+     * @return mixed
      */
     public function __get($name)
     {
@@ -56,9 +51,8 @@ class Parameters
     }
 
     /**
-     * [__set description]
-     * @param [type] $name  [description]
-     * @param [type] $value [description]
+     * @param $name
+     * @param $value
      */
     public function __set($name, $value)
     {
@@ -66,10 +60,9 @@ class Parameters
     }
 
     /**
-     * [__call description]
-     * @param  [type] $name      [description]
-     * @param  [type] $arguments [description]
-     * @return [type]            [description]
+     * @param $name
+     * @param $arguments
+     * @return null
      */
     public function __call($name, $arguments)
     {
@@ -81,9 +74,8 @@ class Parameters
     }
 
     /**
-     * [get description]
-     * @param  [type] $name [description]
-     * @return [type]       [description]
+     * @param $name
+     * @return mixed
      */
     public function get($name)
     {
@@ -91,9 +83,9 @@ class Parameters
     }
 
     /**
-     * [set description]
-     * @param [type] $name  [description]
-     * @param [type] $value [description]
+     * @param $name
+     * @param $value
+     * @return mixed
      */
     public function set($name, $value)
     {
@@ -101,10 +93,9 @@ class Parameters
     }
 
     /**
-     * [is description]
-     * @param  [type]  $name  [description]
-     * @param  [type]  $value [description]
-     * @return boolean        [description]
+     * @param $name
+     * @param $value
+     * @return bool
      */
     public function is($name, $value)
     {
@@ -112,9 +103,8 @@ class Parameters
     }
 
     /**
-     * [has description]
-     * @param  [type]  $name [description]
-     * @return boolean       [description]
+     * @param $name
+     * @return bool
      */
     public function has($name)
     {
@@ -122,9 +112,8 @@ class Parameters
     }
 
     /**
-     * [hasProperty description]
-     * @param  [type]  $name [description]
-     * @return boolean       [description]
+     * @param $name
+     * @return bool
      */
     public function hasProperty($name)
     {
@@ -132,9 +121,8 @@ class Parameters
     }
 
     /**
-     * [hasQueryParameter description]
-     * @param  [type]  $name [description]
-     * @return boolean       [description]
+     * @param $name
+     * @return bool
      */
     public function hasQueryParameter($name)
     {
@@ -142,8 +130,7 @@ class Parameters
     }
 
     /**
-     * [clear description]
-     * @return [type] [description]
+     * @return void
      */
     public function clear()
     {
@@ -151,8 +138,7 @@ class Parameters
     }
 
     /**
-     * [toArray description]
-     * @return [type] [description]
+     * @return array
      */
     public function toArray()
     {
@@ -160,8 +146,7 @@ class Parameters
     }
 
     /**
-     * [toJson description]
-     * @return [type] [description]
+     * @return string
      */
     public function toJson()
     {
@@ -169,8 +154,7 @@ class Parameters
     }
 
     /**
-     * [toObject description]
-     * @return [type] [description]
+     * @return null
      */
     public function toObject()
     {
@@ -178,8 +162,7 @@ class Parameters
     }
 
     /**
-     * [getQueryParameters description]
-     * @return [type] [description]
+     * @return object
      */
     public function getQueryParameters()
     {

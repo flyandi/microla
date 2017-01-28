@@ -21,14 +21,18 @@ namespace Microla;
 
 class Pool
 {
+    /**
+     * @var string
+     */
     const SERVICE = "Service";
 
-
+    /**
+     * @var array
+     */
     private $endpoints = [];
 
     /**
-     * [construct description]
-     * @return [type] [description]
+     * Pool constructor.
      */
     public function __construct()
     {
@@ -36,8 +40,7 @@ class Pool
     }
 
     /**
-     * [discover description]
-     * @return [type] [description]
+     * @return void
      */
     public function discover()
     {
@@ -74,8 +77,7 @@ class Pool
     }
 
     /**
-     * [count description]
-     * @return [type] [description]
+     * @return int
      */
     public function count()
     {
@@ -84,8 +86,7 @@ class Pool
 
 
     /**
-     * [clear description]
-     * @return [type] [description]
+     * @return void
      */
     public function clear()
     {
@@ -94,9 +95,8 @@ class Pool
 
 
     /**
-     * [getEndpoint description]
-     * @param  [type] $request [description]
-     * @return [type]          [description]
+     * @param $request
+     * @return bool|mixed
      */
     public function getEndpoint($request)
     {
@@ -115,32 +115,27 @@ class Pool
 
 
     /**
-     * [getEndpointId description]
-     * @param  [type] $name [description]
-     * @return [type]       [description]
+     * @param $name
+     * @return string
      */
     public function getEndpointId($name)
     {
         return strtolower(trim($name));
     }
 
-
     /**
-     * [hasEndpoint description]
-     * @param  [type]  $name [description]
-     * @return boolean       [description]
+     * @param $name
+     * @return bool
      */
     public function hasEndpoint($name)
     {
         return isset($this->endpoints[$this->getEndpointId($name)]);
     }
 
-
     /**
-     * [__registerEndpoint description]
-     * @param  [type] $classId           [description]
-     * @param  [type] $classInstanceName [description]
-     * @return [type]                    [description]
+     * @param $classId
+     * @param $classInstanceName
+     * @return bool
      */
     private function __registerEndpoint($classId, $classInstanceName)
     {

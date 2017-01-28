@@ -21,6 +21,8 @@
  * This automatically starts the service discovery and executes the router.
  *
  * To prevent this, please define the variable MICROLA_PREVENT_AUTOSTART
+ *
+ * @bootstrap
  */
 
 if (!defined("MICROLA_PREVENT_AUTOSTART")) {
