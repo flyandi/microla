@@ -3,5 +3,12 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../composer/php-helpers" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../customers/cloudcompli/mobile" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../customers/ripped" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../mobile/facefinder" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../alexa-intent-sequence" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../ci-build-image-aws-lambda-node" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../cwplus" vcs="Git" />
   </component>
 </project>

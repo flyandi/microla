@@ -4,17 +4,19 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
-      <library name="PHP Runtime" type="php">
-        <CLASSES>
-          <root url="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard" />
-        </CLASSES>
-        <SOURCES>
-          <root url="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard" />
-        </SOURCES>
-      </library>
-    </orderEntry>
     <orderEntry type="module" module-name="ferrly" />
     <orderEntry type="module" module-name="php-helpers" />
+    <orderEntry type="module" module-name="facefinder" />
+    <orderEntry type="module" module-name="facefinder" />
+    <orderEntry type="module" module-name="ci-build-image-aws-lambda-node" />
+    <orderEntry type="module" module-name="mazda" />
+    <orderEntry type="module" module-name="graybar" />
+    <orderEntry type="module" module-name="voicexp" />
+    <orderEntry type="module" module-name="ripped" />
+    <orderEntry type="module" module-name="alexa-intent-sequence" />
+    <orderEntry type="module" module-name="cwplus" />
+    <orderEntry type="module" module-name="cloudcompli" />
+    <orderEntry type="module" module-name="facefinder" />
+    <orderEntry type="module" module-name="mobile" />
   </component>
 </module>

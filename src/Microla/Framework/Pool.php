@@ -100,7 +100,6 @@ class Pool
      */
     public function getEndpoint($request)
     {
-
         // prepare
         $endpointId = $this->getEndpointId($request);
 

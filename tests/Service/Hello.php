@@ -21,6 +21,10 @@ namespace Service;
 
 class Hello
 {
+    public function getSecurityToken() {
+        return true;
+    }
+
 	public function get() {
 
 		return "Hello World";

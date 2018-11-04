@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57568cac-772c-4ec4-a2c4-dabefeebaec0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/../../composer/php-helpers/.idea/php-helpers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../composer/php-helpers/.idea/php-helpers.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli/.react/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli/.react/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ferrly/.idea/ferrly.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ferrly/.idea/ferrly.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ferrly/app/services/web/build/public/static/assets/bundle.app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ferrly/app/services/web/build/public/static/assets/bundle.app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ferrly/app/services/web/src/app/components/NotificationPanel/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ferrly/app/services/web/src/app/components/NotificationPanel/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ferrly/app/services/web/src/app/components/NotificationPanel/styles.less" beforeDir="false" afterPath="$PROJECT_DIR$/../ferrly/app/services/web/src/app/components/NotificationPanel/styles.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ferrly/app/services/web/src/app/components/SidebarPanel/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ferrly/app/services/web/src/app/components/SidebarPanel/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ferrly/app/services/web/src/app/less/app.less" beforeDir="false" afterPath="$PROJECT_DIR$/../ferrly/app/services/web/src/app/less/app.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/microla.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/microla.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,28 +35,114 @@
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="microla" />
+    <favorites_list name="microla">
+      <favorite_root url="file://$PROJECT_DIR$/../ferrly/driver/DriverApp/src/components/header" module="ferrly" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+        <favorite_root url="file://$PROJECT_DIR$/../ferrly/driver/DriverApp/src/components/header/index.js" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      </favorite_root>
+    </favorites_list>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>$addressData</find>
+      <find>Import</find>
+      <find>openDatabase</find>
+      <find>Contact</find>
+      <find>contact</find>
+      <find>TagPicker</find>
+      <find>getName</find>
+      <find>SORT_CONTACTS</find>
+      <find>Category</find>
+      <find>getCategory</find>
+      <find>SUBSCRIPTION_SUSPENDED</find>
+      <find>Suspended</find>
+      <find>$TRANSACTION_STATUS_MAPPING</find>
+      <find>MESSAGE_ALREADY</find>
+      <find>consol</find>
+      <find>template</find>
+      <find>path</find>
+      <find>templatePath</find>
+      <find>DEMO_INTENTS</find>
+      <find>MESSAGE_SUBSCRIPTION_FAILED</find>
+      <find>sync</find>
+      <find>npminstall</find>
+      <find>PauseIntent</find>
+      <find>Sorry, the application didn't know what to do with that intent</find>
+      <find>tvOS</find>
+      <find>Navigatio</find>
+      <find>StackNavigator</find>
+      <find>react-native-vector-icons</find>
+      <find>Navigation</find>
+      <find>action.pa</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../ferrly" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Microla/Bootstrap/Bootstrap.php" />
-        <option value="$PROJECT_DIR$/src/Microla/Framework/Router.php" />
-        <option value="$PROJECT_DIR$/src/Microla/Framework/Endpoint.php" />
-        <option value="$PROJECT_DIR$/src/Microla/Framework/Parameters.php" />
-        <option value="$PROJECT_DIR$/src/Microla/Framework/Pool.php" />
-        <option value="$PROJECT_DIR$/src/Microla/Framework/Request.php" />
-        <option value="$PROJECT_DIR$/src/Microla/Framework/Response.php" />
-        <option value="$PROJECT_DIR$/../ferrly/app/services/web/src/app/components/ListItem/index.js" />
-        <option value="$PROJECT_DIR$/../ferrly/app/services/web/src/app/components/NotificationPanel/index.js" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/tooling/generator/generators/app/bin/_aws.sh" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/tooling/generator/generators/app/templates/_gitlab-ci.yml" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/tooling/generator/generators/app/templates/_package.json" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/skills/hubble/src/content/english.js" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/skills/hubble/src/configuration/index.js" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/tooling/generator/generators/app/templates/src/configuration/index.js" />
+        <option value="$PROJECT_DIR$/../../customers/ripped/src/abstract/ripped-abstract-downloads.php" />
+        <option value="$PROJECT_DIR$/../../customers/ripped/src/includes/class-ripped-authnet.php" />
+        <option value="$PROJECT_DIR$/../../customers/ripped/src/public/views/ripped-public-huddle-traineepayment.php" />
+        <option value="$PROJECT_DIR$/../../customers/ripped/src/public/views/ripped-public-huddle-subscribe.php" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/tooling/generator/generators/app/templates/src/content/english.js" />
+        <option value="$PROJECT_DIR$/../../mobile/facefinder/src/objects/storage.js" />
+        <option value="$PROJECT_DIR$/../../customers/ripped/src/abstract/ripped-abstract-payments.php" />
+        <option value="$PROJECT_DIR$/../../customers/ripped/src/ripped-cli.php" />
+        <option value="$PROJECT_DIR$/../../customers/ripped/src/abstract/ripped-abstract-instructor.php" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/tooling/generator/generators/app/index.js" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/tooling/generator/generators/app/templates/src/content/index.js" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/tooling/generator/generators/app/templates/src/application/index.js" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/skills/cantorlaw/repo/skill/src/application/api.s.js" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/skills/cantorlaw/repo/skill/src/application/api.js" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/skills/ryleeboo/package.json" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/skills/ryleeboo/src/configuration/index.js" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/skills/ryleeboo/src/application/api.js" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/skills/ryleeboo/src/content/english.js" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/skills/ryleeboo/publish.sh" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/skills/ryleeboo/.gitignore" />
+        <option value="$PROJECT_DIR$/../../customers/voicexp/skills/ryleeboo/src/application/index.js" />
+        <option value="$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli/src/App.js" />
+        <option value="$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli/src/AppNavigation.js" />
+        <option value="$PROJECT_DIR$/../../mobile/facefinder/ios/facefinder/Info.plist" />
+        <option value="$PROJECT_DIR$/../../mobile/facefinder/ios/Podfile" />
+        <option value="$PROJECT_DIR$/../../mobile/facefinder/ios/facefinder.xcodeproj/project.pbxproj" />
+        <option value="$PROJECT_DIR$/../../mobile/facefinder/src/App.js" />
+        <option value="$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli/ios/Podfile" />
+        <option value="$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli/package.json" />
+        <option value="$PROJECT_DIR$/../../mobile/facefinder/package.json" />
+        <option value="$PROJECT_DIR$/../../mobile/facefinder/src/AppInit.js" />
+        <option value="$PROJECT_DIR$/../../mobile/facefinder/src/AppNavigator.js" />
+        <option value="$PROJECT_DIR$/../../mobile/facefinder/src/reducers/contacts.js" />
+        <option value="$PROJECT_DIR$/../../customers/cloudcompli/app/src/constants/scenes.js" />
+        <option value="$PROJECT_DIR$/../../customers/cloudcompli/app/src/reducers/index.js" />
+        <option value="$PROJECT_DIR$/../../customers/cloudcompli/app/src/store/configureStore.js" />
+        <option value="$PROJECT_DIR$/../../customers/cloudcompli/app/src/store/promise.js" />
+        <option value="$PROJECT_DIR$/../../customers/cloudcompli/app/src/App.js" />
+        <option value="$PROJECT_DIR$/../../customers/cloudcompli/app/src/AppInit.js" />
+        <option value="$PROJECT_DIR$/../../customers/cloudcompli/app/src/AppNavigator.js" />
+        <option value="$PROJECT_DIR$/../../customers/cloudcompli/app/app.json" />
+        <option value="$PROJECT_DIR$/../../customers/cloudcompli/app/index.android.js" />
+        <option value="$PROJECT_DIR$/../../customers/cloudcompli/app/index.ios.js" />
+        <option value="$PROJECT_DIR$/../../customers/cloudcompli/app/package.json" />
+        <option value="$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli/.gitignore" />
       </list>
     </option>
   </component>
@@ -59,305 +158,83 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="774" />
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli/node_modules" />
+    <handled-path value="$PROJECT_DIR$/../../customers/voicexp/skills/cantorlaw/repo/skill/node_modules" />
+    <handled-path value="$PROJECT_DIR$/../../customers/voicexp/skills/graybar/repo/skill/node_modules" />
+    <handled-path value="$PROJECT_DIR$/../../customers/voicexp/skills/ryleeboo/node_modules" />
+    <handled-path value="$PROJECT_DIR$/../../customers/voicexp/tooling/generator/node_modules" />
+    <handled-path value="$PROJECT_DIR$/../../mazda/mazda-appdrive-app/node_modules" />
+    <handled-path value="$PROJECT_DIR$/../../mazda/mazda-appdrive-web-api/node_modules" />
+    <handled-path value="$PROJECT_DIR$/../../mazda/mazda-sdk-runtime/src/system/node_modules" />
+    <handled-path value="$PROJECT_DIR$/../ferrly/app/services/api/service/node_modules" />
+    <handled-path value="$PROJECT_DIR$/../ferrly/app/services/web/src/node_modules" />
+    <handled-path value="$PROJECT_DIR$/../ferrly/driver/DriverApp/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="970" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="microla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ferrly" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="microla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ferrly" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="microla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ferrly" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="microla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ferrly" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="microla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ferrly" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="microla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ferrly" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="microla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ferrly" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NotificationPanel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="microla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ferrly" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helloworld" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="microla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ferrly" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="microla" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="php-helpers" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="microla" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microla" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v7.4.0/bin/node" />
-    <property name="js.eslint.eslintPackage" value="" />
-    <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v7.4.0/bin/node" />
     <property name="JavaScriptPreferStrict" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///code/mobile/facefinder/src/scenes/contact.js" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
+    <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v7.4.0/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
     <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../../customers/cantorlaw/skill/src/application" />
+      <recent name="$PROJECT_DIR$/../../customers/cantorlaw/skill/src/configuration" />
+      <recent name="$PROJECT_DIR$/../../customers/cantorlaw/skill/src" />
+      <recent name="$PROJECT_DIR$/../../customers/cantorlaw/alexaskill" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
-    </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
-      <PhpTestRunnerSettings />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -365,31 +242,7 @@
       <tasks />
       <arguments />
       <envs />
-      <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <working-directory />
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui />
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
-      <method />
-    </configuration>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -400,12 +253,35 @@
       <updated>1485582840736</updated>
       <workItem from="1485582843206" duration="370000" />
       <workItem from="1485583249436" duration="147000" />
-      <workItem from="1485583478345" duration="1804000" />
+      <workItem from="1485583478345" duration="2104000" />
+      <workItem from="1486096859905" duration="356000" />
+      <workItem from="1486097369599" duration="36015000" />
+      <workItem from="1486275612679" duration="39747000" />
+      <workItem from="1486796499811" duration="23028000" />
+      <workItem from="1487216752188" duration="17509000" />
+      <workItem from="1487475607922" duration="2640000" />
+      <workItem from="1487647640672" duration="29827000" />
+      <workItem from="1488083237393" duration="6112000" />
+      <workItem from="1488131301912" duration="19051000" />
+      <workItem from="1488347440549" duration="11859000" />
+      <workItem from="1488573031413" duration="19270000" />
+      <workItem from="1488988209270" duration="8061000" />
+      <workItem from="1489698639873" duration="13000" />
+      <workItem from="1490150800032" duration="7000" />
+      <workItem from="1490150845248" duration="58428000" />
+      <workItem from="1491273630484" duration="555000" />
+      <workItem from="1491365354208" duration="6706000" />
+      <workItem from="1493270903706" duration="5461000" />
+      <workItem from="1493869928917" duration="113000" />
+      <workItem from="1493908414748" duration="5361000" />
+      <workItem from="1494034953469" duration="4930000" />
+      <workItem from="1494179175195" duration="2648000" />
+      <workItem from="1538971356306" duration="51000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2321000" />
+    <option name="totallyTimeSpent" value="300369000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -417,217 +293,146 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24609375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2297619" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32907802" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3296875" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="TypeScript" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" order="10" visible="true" weight="0.32932332" />
+      <window_info anchor="right" x="100" y="122" width="1080" height="574" id="Documentation" order="3" type="FLOATING" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
     </layout>
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../ferrly/driver/DriverApp/src/index.js</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../../mobile/facefinder/src/components/icon/index.js</url>
+          <line>1</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../../mobile/facefinder/src/scenes/contact.js</url>
+          <line>3</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/../../mobile/facefinder/src/reducers/index.js</url>
+          <line>1</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="35" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli/src/AppNavigation.js" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/node_modules/react-native-vector-icons/package.json" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/node_modules/react-native-vector-icons/RNVectorIcons.podspec" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/src/store/promise.js" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/ios/FaceFinder/Info.plist" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/node_modules/react-native-sqlite-storage/sqlite.js" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/src/objects/storage.js" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/ios/Podfile.lock" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/ios/FaceFinder.xcworkspace/contents.xcworkspacedata" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/ios/FaceFinder.xcodeproj/project.pbxproj" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/src/store/configureStore.js" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/ios/Podfile" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli/ios/Podfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/mobile/index.ios.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/mobile/App/Config/AppConfig.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/mobile/App/Fixtures/gantman.json" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/mobile/App/Components/DrawerButton.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/mobile/App/Navigation/Styles/NavigationStyles.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/mobile/App/Components/PizzaLocation.js" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/node_modules/react-native-navigation/src/index.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/mobile/node_modules/react-navigation/src/react-navigation.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/mobile/App/Navigation/AppNavigation.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/mobile/package.json" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/node_modules/react-navigation/src/react-navigation.js" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/src/reducers/cardNavigation.js" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/src/AppNavigator.js" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/src/AppInit.js" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/src/App.js" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/src/reducers/index.js" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/package.json" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/src/reducers/contacts.js" />
+    <entry file="file://$PROJECT_DIR$/../../mobile/facefinder/src/reducers/selected.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/app/src/constants/sorts.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/app/src/reducers/index.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/app/src/store/promise.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/app/src/themes/base-theme.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/app/src/store/configureStore.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/app/src/constants/scenes.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/app/src/App.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/app/src/AppInit.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/app/src/AppNavigator.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/app/app.json" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/app/package.json" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/app/index.ios.js" />
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../customers/cloudcompli/app/index.android.js" />
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Microla/Framework/Endpoint.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#976#0#PHP" expanded="false" />
-            <element signature="e#998#1010#0#PHP" expanded="false" />
-            <marker date="1485583788000" expanded="true" signature="1047:2290" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Microla/Framework/Endpoint.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#976#0#PHP" expanded="false" />
-            <element signature="e#998#1010#0#PHP" expanded="false" />
-            <marker date="1485583788000" expanded="true" signature="1047:2290" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/flyandi/helpers/test/AppVar.php" />
-    <entry file="file://$PROJECT_DIR$/tests/Service/HelloDefault.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Microla/Bootstrap/Bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#976#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Microla/Framework/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="37" column="7" lean-forward="false" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Microla/Framework/Endpoint.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="84" column="25" lean-forward="false" selection-start-line="84" selection-start-column="15" selection-end-line="84" selection-end-column="25" />
-          <folding>
-            <element signature="e#6#976#0#PHP" expanded="false" />
-            <element signature="e#998#1010#0#PHP" expanded="false" />
-            <marker date="1485583788000" expanded="true" signature="1047:2290" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Microla/Framework/Parameters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2736">
-          <caret line="160" column="12" lean-forward="false" selection-start-line="160" selection-start-column="12" selection-end-line="160" selection-end-column="12" />
-          <folding>
-            <marker date="1485583905000" expanded="true" signature="1014:3619" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Microla/Framework/Pool.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2299">
-          <caret line="137" column="19" lean-forward="false" selection-start-line="137" selection-start-column="19" selection-end-line="137" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Microla/Framework/Request.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="49" column="26" lean-forward="false" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Microla/Framework/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="69" column="21" lean-forward="false" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Microla/Framework/Types.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ferrly/app/services/web/src/app/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ferrly/app/services/web/src/app/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Microla/Framework/Service.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ferrly/app/services/web/src/app/components/NotificationPanel/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#29#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ferrly/app/services/web/src/app/components/ListItem/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="80" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="104" selection-end-column="12" />
-          <folding />
+        <state relative-caret-position="216">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>

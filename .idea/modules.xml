@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../alexa-intent-sequence/.idea/alexa-intent-sequence.iml" filepath="$PROJECT_DIR$/../alexa-intent-sequence/.idea/alexa-intent-sequence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ci-build-image-aws-lambda-node/.idea/ci-build-image-aws-lambda-node.iml" filepath="$PROJECT_DIR$/../ci-build-image-aws-lambda-node/.idea/ci-build-image-aws-lambda-node.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli/.idea/cloudcompli.iml" filepath="$PROJECT_DIR$/../../customers/cloudcompli/cloudcompli/.idea/cloudcompli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../cwplus/.idea/cwplus.iml" filepath="$PROJECT_DIR$/../cwplus/.idea/cwplus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../mobile/facefinder/.idea/facefinder.iml" filepath="$PROJECT_DIR$/../../mobile/facefinder/.idea/facefinder.iml" />
       <module fileurl="file://$PROJECT_DIR$/../ferrly/.idea/ferrly.iml" filepath="$PROJECT_DIR$/../ferrly/.idea/ferrly.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../customers/graybar/.idea/graybar.iml" filepath="$PROJECT_DIR$/../../customers/graybar/.idea/graybar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../mazda/.idea/mazda.iml" filepath="$PROJECT_DIR$/../../mazda/.idea/mazda.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/microla.iml" filepath="$PROJECT_DIR$/.idea/microla.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../customers/cloudcompli/mobile/.idea/mobile.iml" filepath="$PROJECT_DIR$/../../customers/cloudcompli/mobile/.idea/mobile.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../composer/php-helpers/.idea/php-helpers.iml" filepath="$PROJECT_DIR$/../../composer/php-helpers/.idea/php-helpers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../customers/ripped/.idea/ripped.iml" filepath="$PROJECT_DIR$/../../customers/ripped/.idea/ripped.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../customers/voicexp/.idea/voicexp.iml" filepath="$PROJECT_DIR$/../../customers/voicexp/.idea/voicexp.iml" />
     </modules>
   </component>
 </project>

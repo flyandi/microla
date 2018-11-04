@@ -19,12 +19,17 @@
 
 namespace Microla;
 
-class Router
+class Security
 {
     /**
      * @var null
      */
     private $parent = null;
+
+    /**
+     * @var array
+     */
+    private $conditions = [];
 
     /**
      * Router constructor.
@@ -36,48 +41,19 @@ class Router
     }
 
     /**
+     * @param $header
+     * @param $value
+     */
+    public function withHeaderToken($header, $value)
+    {
+        $this->conditions[] = Compare(GetHTTPHeaderVar($header, false), $value);
+    }
+
+    /**
      * @return bool|object
      */
-    public function route()
+    public function process()
     {
-
-        // parse request
-        $request = new Request();
-
-        // check request type
-        switch (true) {
-
-            case $request->isRest():
-
-                // get endpoint
-                if ($endpoint = $this->parent->getPool()->getEndpoint(GetDirVar(0)))
-                {
-                    if(!$endpoint->hasSecurity())
-                    {
-                        return Response::http(false, Response::error(Response::NOT_AUTHORIZED));
-                    }
-
-                    if ($result = $endpoint->{$request->getRequestMethod()}())
-                    {
-                        return Response::http($endpoint, $result);
-                    }
-
-                    return Response::http(false, Response::error(Response::NOT_IMPLEMENTED));
-                }
-
-                return Response::http(false, Response::error(Response::NOT_FOUND));
-
-                break;
-
-            case $request->isCrud():
-
-                break;
-
-            case $request->isCli():
-
-                break;
-        }
-
-        return false;
+        return !count($this->conditions) || in_array(false, $this->conditions) ? false : true;
     }
 }

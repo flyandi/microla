@@ -27,6 +27,16 @@ class Response {
 	 */
 	const OK = 200;
 
+    /**
+     * @var integer
+     */
+    const NOT_AUTHORIZED = 401;
+
+    /**
+     * @var integer
+     */
+    const FORBIDDEN = 403;
+
 	/**
 	 * @var integer
 	 */

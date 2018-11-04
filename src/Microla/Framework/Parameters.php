@@ -32,6 +32,11 @@ class Parameters
     private $query = null;
 
     /**
+     * @var bool|null|string
+     */
+    private $payload = null;
+
+    /**
      * Parameters constructor.
      */
     public function __construct()
@@ -39,6 +44,8 @@ class Parameters
         $this->clear();
 
         $this->query = $this->getQueryParameters();
+
+        $this->payload = $this->getRawPayload();
     }
 
     /**
@@ -162,10 +169,27 @@ class Parameters
     }
 
     /**
+     * @param bool $array
+     * @return mixed
+     */
+    public function fromJson($array = false)
+    {
+        return json_decode($this->payload, $array);
+    }
+
+    /**
      * @return object
      */
     public function getQueryParameters()
     {
-        return (object) Extend($_GET, $_POST, json_decode(file_get_contents('php://input'), true));
+        return (object) Extend($_GET, $_POST);
+    }
+
+    /**
+     * @return bool|string
+     */
+    public function getRawPayload()
+    {
+        return file_get_contents('php://input');
     }
 }

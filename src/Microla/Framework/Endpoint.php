@@ -30,6 +30,11 @@ class Endpoint
     const DEFAULT = 'default';
 
     /**
+     * @var string
+     */
+    const SECURITY = 'security';
+
+    /**
      * @var null
      */
     private $classInstance = null;
@@ -87,5 +92,20 @@ class Endpoint
     public function getParameters()
     {
         return $this->parameters;
+    }
+
+    /**
+     * @return bool
+     */
+    public function hasSecurity()
+    {
+        if (method_exists($this->classInstance, self::SECURITY)) {
+
+            $security = new Security($this);
+
+            return $security->process(call_user_func_array([$this->classInstance, self::SECURITY], [$security, $this]));
+        }
+
+        return true;
     }
 }
