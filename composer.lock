@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "44db1a5a639f48b228d71f9d98927c26",
+    "content-hash": "1328c6377ba3f2db2e74f57fc42a7ce4",
     "packages": [
         {
             "name": "flyandi/helpers",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/flyandi/php-helpers.git",
-                "reference": "1e3653056696156366f5dbe439b0b389e62bb191"
+                "reference": "47aac40cd3f8209fd06c0f458d3bc4c088e2848e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/flyandi/php-helpers/zipball/1e3653056696156366f5dbe439b0b389e62bb191",
-                "reference": "1e3653056696156366f5dbe439b0b389e62bb191",
+                "url": "https://api.github.com/repos/flyandi/php-helpers/zipball/47aac40cd3f8209fd06c0f458d3bc4c088e2848e",
+                "reference": "47aac40cd3f8209fd06c0f458d3bc4c088e2848e",
                 "shasum": ""
             },
             "type": "library",
@@ -38,7 +38,7 @@
             ],
             "description": "A collection of useful global php helpers.",
             "homepage": "https://github.com/flyandi/php-helpers",
-            "time": "2017-01-28 04:51:38"
+            "time": "2017-05-15T20:34:37+00:00"
         }
     ],
     "packages-dev": [],
