@@ -118,12 +118,12 @@ class Response {
 	}
 
 
-	/**
-	 * [content description]
-	 * @param  [type] $data [description]
-	 * @param  [type] $type [description]
-	 * @return [type]       [description]
-	 */
+    /**
+     * @param $endpoint
+     * @param $content
+     * @param $type
+     * @return object
+     */
 	public static function content($endpoint, $content, $type)
 	{
 		// prepare
@@ -180,22 +180,29 @@ class Response {
 		];
 	}
 
-	/**
-	 * [error description]
-	 * @param  [type] $error [description]
-	 * @return [type]        [description]
-	 */
+    /**
+     * @param $error
+     * @return object
+     */
 	public static function error($error)
 	{
 		return (object) [self::RESPONSE_ERROR => $error];
 	}
 
+    /**
+     * @return object
+     */
+	public static function health()
+    {
+        return self::http(false, "OK");
+    }
 
-	/**
-	 * [respondAsJson description]
-	 * @param  [type] $content [description]
-	 * @return [type]          [description]
-	 */
+
+    /**
+     * @param $content
+     * @param $parameters
+     * @return string
+     */
 	public static function formatAsJson($content, $parameters)
 	{
 		// format content
@@ -203,14 +210,13 @@ class Response {
 
 		// format message
 		return json_encode($content);
-	}	
+	}
 
-	/**
-	 * [formatAsString description]
-	 * @param  [type]  $content    [description]
-	 * @param  boolean $parameters [description]
-	 * @return [type]              [description]
-	 */
+    /**
+     * @param $content
+     * @param bool $parameters
+     * @return bool|mixed|string|void
+     */
 	public static function formatAsString($content, $parameters = false)
 	{	
 		if(!is_string($content)) return false;

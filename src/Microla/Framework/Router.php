@@ -22,6 +22,11 @@ namespace Microla;
 class Router
 {
     /**
+     * @const string
+     */
+    const HEALTH = "health";
+
+    /**
      * @var null
      */
     private $parent = null;
@@ -48,6 +53,10 @@ class Router
         switch (true) {
 
             case $request->isRest():
+
+                if(Compare(GetDirVar(0), self::HEALTH)) {
+                    return Response::health();
+                }
 
                 // get endpoint
                 if ($endpoint = $this->parent->getPool()->getEndpoint(GetDirVar(0)))
